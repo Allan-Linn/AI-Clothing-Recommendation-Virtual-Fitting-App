@@ -39,7 +39,7 @@ This recommends and displays an outfit based on your wardrobe.
 We are using streamlit now, easier to run locally than full react application w/ some separate backend
 
 To run:
-- cd into root dir (cis5810final)
+- cd into root dir
 - Run `streamlit run streamlit_app/Home.py`
 
 You'll need streamlit installed: `pip install streamlit`
