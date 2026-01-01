@@ -1,2 +1,39 @@
 # AI-Clothing-Recommendation-Virtual-Fitting-App
 AI-powered virtual try-on + outfit recommendation app. Uses CLIP &amp; DINO VLMs for garment localization, SAM for clean cutouts, homography-based alignment for consistent mannequin overlays, and an LLM API + preference-aware model to generate personalized style suggestions.
+
+0. Setup Environment
+Make sure your environment satisfies requirement.txt
+
+1. Prepare Inputs
+Create a folder FOLDER to store your input images (ideally pictures taken by the user).
+
+2. Segment Images
+From the project root, run:
+python segment/predict_and_segment_folder.py --images_fir FOLDER
+
+This will segment each image and save results in an out/ folder.
+
+3. Process Segmented Images
+Generate a wardrobe dataset with:
+
+python recommend/wardrobe.py
+
+This creates data/wardrobe.csv containing all segmented items.
+
+4. Get Outfit Recommendations
+Run:
+
+python recommend/recommend.py
+
+This recommends and displays an outfit based on your wardrobe.
+
+How to run frontend on local
+We are using streamlit now, easier to run locally than full react application w/ some separate backend
+
+To run:
+
+cd into root dir
+Run streamlit run streamlit_app/Home.py
+You'll need streamlit installed: pip install streamlit
+
+For explore.py it uses a Pixabay API key. You can get your own for free here: Pixabay link (you'll need to login/make account) Just paste it in when you get it: API_KEY = "<your-api-key-here>"
