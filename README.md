@@ -46,3 +46,8 @@ You'll need streamlit installed: `pip install streamlit`
 
 For explore.py it uses a Pixabay API key. You can get your own for free here: [Pixabay link (you'll need to login/make account)](https://pixabay.com/api/docs/)
 Just paste it in when you get it: `API_KEY = "<your-api-key-here>"`
+
+
+[![Watch the Demo](https://drive.google.com/file/d/1-WqNrWwS3Zon4udNUE9SaFrTWNZJNh6W/view)](https://drive.google.com/file/d/1-WqNrWwS3Zon4udNUE9SaFrTWNZJNh6W/view)
+
+
